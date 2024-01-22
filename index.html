@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe - Game</title>
+    <meta name="description"
+        content="Experience timeless fun with our Tic Tac Toe game! Challenge friends on our sleek digital platform. Play the classic 3x3 grid and aim for victory by forming a line of three Xs or Os. Simple yet engaging, our Tic Tac Toe offers a quick and entertaining diversion for players of all ages. Enjoy the thrill of strategic gameplay and friendly competition. Play now and see if you can emerge victorious in this iconic game of skill and strategy!">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="gameArea">
+        <div id="invalidSelection">
+            Invalid Selection
+        </div>
+        <div id="draw">
+            <i class="ri-close-circle-fill" id="cancle" onclick="refresh()"></i>
+            It's a DRAW
+        </div>
+        <div id="crossWin">
+            <i class="ri-close-circle-fill" id="cancle" onclick="refresh()"></i>
+            <div><i style="color: red;" class="ri-close-fill"></i> Wins</div>
+        </div>
+        <div id="circleWin">
+            <i class="ri-close-circle-fill" id="cancle" onclick="refresh()"></i>
+            <div><i style="color: red;" class="ri-circle-line"></i> Wins</div>
+        </div>
+        <div id="titleGame">
+            Tic Tac Toe
+        </div>
+        <div id="player1" class="playerSection">
+            <i id="playerCross" class="ri-close-fill playerIdentity"></i>
+        </div>
+        <div id="dashboard">
+            <div id="box1" class="box" onclick="fillAt(box1)"></div>
+            <div id="box2" class="box" onclick="fillAt(box2)"></div>
+            <div id="box3" class="box" onclick="fillAt(box3)"></div>
+            <div id="box4" class="box" onclick="fillAt(box4)"></div>
+            <div id="box5" class="box" onclick="fillAt(box5)"></div>
+            <div id="box6" class="box" onclick="fillAt(box6)"></div>
+            <div id="box7" class="box" onclick="fillAt(box7)"></div>
+            <div id="box8" class="box" onclick="fillAt(box8)"></div>
+            <div id="box9" class="box" onclick="fillAt(box9)"></div>
+        </div>
+        <div id="player2" class="playerSection">
+            <i id="playerCircle" class="ri-circle-line playerIdentity"></i>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

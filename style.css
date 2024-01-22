@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+}
+#gameArea {
+  width: 100%;
+  height: 95%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#titleGame {
+  font-size: 1.7rem;
+  font-weight: 800;
+  background-color: #f9de57;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
+}
+#dashboard {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0.5rem;
+  width: 150px;
+  margin: auto;
+  text-align: center;
+  justify-content: center;
+}
+
+.box {
+  background-color: #17d6a67a;
+  box-shadow: 0px 0px 8px 1px #e66407;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+}
+
+.playerSection {
+  display: flex;
+  width: 6rem;
+  height: 6rem;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  font-weight: 900;
+  margin: 3rem auto;
+  border-radius: 1rem;
+}
+
+.playerIdentity {
+  text-shadow: 0px 0px 6px #ff00c8;
+  cursor: pointer;
+}
+
+.filled {
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+#invalidSelection {
+  height: 4rem;
+  width: 90vw;
+  max-width: 20rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  justify-content: center;
+  align-items: center;
+  background-color: red;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  border-radius: 0.8rem;
+  display: none;
+}
+#crossWin {
+  height: 5rem;
+  width: 90vw;
+  max-width: 20rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: none;
+  flex-direction: column;
+  transform: translate(-50%, -50%);
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0, 255, 0);
+  font-size: 1.5rem;
+  font-weight: bolder;
+  border-radius: 0.8rem;
+  box-shadow: 0px 0px 8px 1px #3f5f40;
+  z-index: 5;
+}
+#circleWin {
+  height: 5rem;
+  width: 90vw;
+  max-width: 20rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: none;
+  flex-direction: column;
+  transform: translate(-50%, -50%);
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0, 255, 0);
+  font-size: 1.5rem;
+  font-weight: bolder;
+  border-radius: 0.8rem;
+  box-shadow: 0px 0px 8px 1px #3f5f40;
+  z-index: 5;
+}
+#draw {
+  height: 5rem;
+  width: 90vw;
+  max-width: 20rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: none;
+  flex-direction: column;
+  transform: translate(-50%, -50%);
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(234, 255, 0);
+  font-size: 1.5rem;
+  font-weight: bolder;
+  box-shadow: 0px 0px 8px 1px #3f5f40;
+  border-radius: 0.8rem;
+  z-index: 5;
+}
+#draw > i,
+#circleWin > i,
+#crossWin > i {
+  cursor: pointer;
+}
